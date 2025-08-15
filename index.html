@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarajya Trivotsav</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make body fill screen */
+        }
+        main {
+            flex: 1; /* Push footer down if content is short */
+        }
+        .background {
+            background: url(./A.jpg);
+            background-repeat: no-repeat;
+            height: 506px;
+            background-size: cover;
+            margin-left: -10px;
+            margin-right: -10px;
+            text-align: left;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            margin-top: 18%;
+            border-radius: 10px;
+        }
+        .background h1, .background h4 {
+            color: #2c3e50;
+            padding-left: 45px;
+            line-height: 1.2;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(37, 41, 45, 0.51);
+            padding: 10px 20px;
+            padding-top: 10px;
+            font-size: larger;
+            color: #fff;
+            margin-top: -10px;
+        }
+        nav p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+        nav ul li {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        nav ul li:hover {
+            color: #000;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .History {
+            padding: 50px; 
+            text-align: left; 
+            background-color: #fff8f0; 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6;
+        }
+        .schedule {
+            justify-content: center;
+            align-items: center;
+        }
+        footer {
+            background-color: #333; 
+            color: white;          
+            text-align: center; 
+            padding: 10px;
+        }
+        footer a {
+            color: #ffcc00;        
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div id="background" class="background">
+        <nav>
+            <p>35ha</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#History">History</a></li>
+                <li><a href="#Durga">About Durga Puja</a></li>
+                <li><a href="./photo.html">Photos</a></li>
+                <li><a href="https://www.linkedin.com/in/35ha/">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <div id="content" class="content"> 
+            <h1>"Durga Puja: Kolkata's</h1>
+            <h4><strong>Heritage of Joy, Art & Anjali" <br> শারদীয়া শুভেচ্ছা!</strong> Celebrate Kolkata’s grand festival of devotion, art, and community.</h4>
+        </div>
+    </div>
+
+    <div id="History" class="History">
+        <section>
+            <h2 style="color: #b22222; text-align: center;">History of Durga Puja: The Pride of Kolkata</h2>
+            <p>
+                Durga Puja, the grand celebration of Goddess Durga’s victory over the demon Mahishasura, is one of the most significant cultural and religious events in Bengal. 
+                Though its origins can be traced back several centuries, the festival as we know it today began in the <strong>late 16th and early 17th centuries</strong>, 
+                when wealthy zamindar (landlord) families organized <em>baroari pujas</em> (community pujas) to bring together villagers in devotion and celebration.
+            </p>
+            <p>
+                By the <strong>18th century</strong>, during the era of the <strong>British East India Company</strong>, Durga Puja had evolved into an elaborate social event. 
+                The <strong>Shobhabazar Rajbari Puja</strong> initiated by Raja Nabakrishna Deb in 1757 became a landmark celebration, attended by British officers and the local elite — 
+                blending tradition with modernity.
+            </p>
+            <h3 style="color: #8b0000;">Kolkata’s Special Role</h3>
+            <p>
+                Kolkata is often called the <strong>"City of Joy"</strong>, but during Durga Puja, it transforms into the <strong>"City of Lights &amp; Art"</strong>. 
+                No other place in the world matches Kolkata’s scale and creativity during the festival.
+            </p>
+            <ul>
+                <li><strong>Artistic Pandals:</strong> Hundreds of themed pandals across the city showcase extraordinary craftsmanship.</li>
+                <li><strong>Cultural Explosion:</strong> Streets are filled with traditional <em>dhak</em> beats, folk dances, plays, and music programs.</li>
+                <li><strong>Community Spirit:</strong> The festival unites people beyond religion, class, or age.</li>
+                <li><strong>UNESCO Recognition:</strong> In 2021, Kolkata’s Durga Puja was added to UNESCO's Intangible Cultural Heritage list.</li>
+            </ul>
+        </section>
+
+        <div id="Durga" class="Durga">
+            <section id="about">
+                <h3 style="color: #b22222;">About the Festival</h3>
+                <p>Durga Puja is Kolkata’s biggest cultural celebration—five days of <em>puja</em>, art installations (pandals), food, music, and community spirit.</p>
+                <ul>
+                    <li><strong>When:</strong> From <em>Mahalaya</em> to <em>Vijaya Dashami</em></li>
+                    <li><strong>Where:</strong> Across Kolkata</li>
+                    <li><strong>Why:</strong> To honor Goddess Durga’s victory over Mahishasura</li>
+                </ul>
+            </section>
+
+            <section id="schedule" class="schedule">
+                <h3 style="color: #b22222;">Typical Puja Schedule</h3>
+                <table border="1" cellpadding="6" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Bengali Name</th>
+                            <th>Key Events</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Day 1</td><td>Shashthi</td><td>Kalparambha, Bodhon, Adhibas</td></tr>
+                        <tr><td>Day 2</td><td>Saptami</td><td>Nabapatrika snan, morning puja, evening aarti</td></tr>
+                        <tr><td>Day 3</td><td>Ashtami</td><td>Pushpanjali, Sandhi Puja</td></tr>
+                        <tr><td>Day 4</td><td>Nabami</td><td>Maha aarti, cultural programs</td></tr>
+                        <tr><td>Day 5</td><td>Dashami</td><td>Sindoor Khela, Visarjan, Bijoya greetings</td></tr>
+                    </tbody>
+                </table>
+            </section>
+              <section id="pandal-guide">
+              <h3 style="color: #b22222;">Pandal-Hopping Guide</h3>
+              <p>
+                Plan clusters to save time. Example routes:
+              </p>
+                <table border="1" cellpadding="6" cellspacing="0" >
+                <tr>
+                    <th>Region</th>
+                    <th>Famous Pandals</th>
+                </tr>
+                <tr>
+                    <td>North Kolkata</td>
+                    <td>Bagbazar, Kumartuli Park, Sovabazar Rajbari, Ahiritola Sarbojonin, Shobhabazar Rajbari</td>
+                </tr>
+                <tr>
+                    <td>Central Kolkata</td>
+                    <td>College Square, Santosh Mitra Square, Md. Ali Park, Suruchi Sangha</td>
+                </tr>
+                <tr>
+                    <td>South Kolkata</td>
+                    <td>Ekdalia Evergreen, Deshapriya Park, Jodhpur Park, Badamtala Ashar Sangha, Ballygunge Cultural</td>
+                </tr>
+                <tr>
+                    <td>East Kolkata</td>
+                    <td>FD Block, AE Block (Salt Lake), New Town, Babubagan Club</td>
+                </tr>
+                <tr>
+                    <td>Special Theme Pandals</td>
+                    <td>Tridhara Sammilani, Samaj Sebi Sangha, Chetla Agrani Club</td>
+                </tr>
+                </table>
+              <p>
+                Tips: Start early evenings, carry water, use public transport/metro, and keep a power bank.
+              </p>
+            </section>
+           </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 MyWebsite | Designed by Amit Kumar | 
+    <a href="https://www.linkedin.com/in/35ha/">Contact Us</a></p>
+</footer>
+
+</body>
+</html>

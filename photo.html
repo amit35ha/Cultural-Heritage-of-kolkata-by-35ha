@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarajya Trivotsav</title>
+    <style>
+        .background{
+            background-repeat: no-repeat;
+            height: 506px;
+            background-size: cover;
+            margin-left: -10px;
+            margin-right: -10px;
+            text-align: left;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            margin-top: 18%;
+            border-radius: 10px;
+        }
+        .background h1,h4{
+            color: #2c3e50;
+            padding-left: 45px;
+            line-height: 1.2;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(37, 41, 45, 0.51);
+            padding: 10px 20px;
+            font-size: larger;
+            color: #fff;
+            margin-top: -10px;
+        }
+        nav p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+        nav ul li {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        nav ul li:hover {
+            color: #000;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }   
+        .grid-gallery {
+            --size: 100px;
+            display: grid;
+            grid-template-columns: repeat(6, var(--size));
+            grid-auto-rows: var(--size);
+            gap: 5px;
+            place-items: start center;
+            margin-bottom: var(--size);
+        }
+        .grid-gallery img {
+            width: calc(var(--size) * 2);
+            height: calc(var(--size) * 2);
+            object-fit: cover;
+            grid-column: auto / span 2;
+            border-radius: 5px;
+            clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"); 
+            }
+        .grid-gallery img:nth-child(5n - 1) { 
+            grid-column: 2 / span 2 
+        }
+        .grid-gallery:has(img:hover) img:not(:hover) {
+            filter: brightness(0.5) contrast(0.5);
+        }
+        .grid-gallery img {
+        /* ... */
+            transition: clip-path 0.25s, filter 0.75s;
+        }
+        .grid-gallery img:hover {
+            clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+            transition: clip-path 0.25s, filter 0.25s;
+            z-index: 1;
+        }
+        .grid-gallery a:focus {
+        outline: 1px dashed black;
+        outline-offset: -5px;
+        }
+          footer {
+            background-color: #333; 
+            color: white;          
+            text-align: center; 
+            position: fixed;       
+            bottom: 0;
+            width: 100%;
+            margin-bottom: -8px;
+        }
+        footer a {
+            color: #ffcc00;        
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background" class="background">
+    <nav>
+        <p>35ha</p>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+                <a href="./index.html#History">History</a>
+            </li>
+            <li>
+                <a href="./index.html#Durga">About Durga Puja</a>
+            </li>
+            <li>
+                <a href="./photo.html">Photos</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/35ha/">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+    <div style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
+        <article class="grid-gallery">
+        <img src="./p/ (1).jpg" />
+        <img src="./p/ (2).jpg" />
+        <img src="./p/ (3).jpg" />
+        <img src="./p/ (4).jpg" />
+        <img src="./p/ (5).jpg" />
+        <img src="./p/ (6).jpg" />
+        <img src="./p/ (7).jpg" />
+        <img src="./p/ (8).jpg" />
+        <img src="./p/ (9).jpg" />
+        <img src="./p/ (10).jpg" />
+        <img src="./p/ (11).jpg" />
+        <img src="./p/ (12).jpg" />
+        <img src="./p/12.jpg" />
+        </article>
+    </div>
+    <footer>
+        <p>&copy; 2025 MyWebsite | Designed by Amit Kumar | 
+        <a href="https://www.linkedin.com/in/35ha/">Contact Us</a></p>
+    </footer>   
+</body>
+</html>
