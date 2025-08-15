@@ -30,6 +30,7 @@ JavaScript: To add interactivity and dynamic features.
 
 📂 Project Structure
 Cultural-Heritage-of-kolkata-by-35ha/
+
 ├── images/             # Contains all the images used in the project
 ├── index.html          # The main landing page
 ├── food.html           # Page dedicated to Kolkata's cuisine
